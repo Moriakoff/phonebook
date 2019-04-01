@@ -14,6 +14,7 @@ app.config($routeProvider,function ($routeProvider) {
             })
         /*.when("/registration", {
             templateUrl : "registrationPage.htm",
+            controller: "registrationController"
         })*/;
     })
 /*    .run(function ($rootScope,$location) {
