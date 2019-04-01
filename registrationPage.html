@@ -1,0 +1,33 @@
+<div class="modal" id="myModal" ng-controller="registrationCtr">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Registration form</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <p>First name:<input ng-model="fNameReg" type="text" class="form-control"></p>
+                    <p>Last name:<input ng-model="lNameReg" type="text" class="form-control"></p>
+                    <p>Login:<input ng-model="loginReg" type="text" class="form-control"></p>
+                    <p>Email:<input ng-model="emailReg" type="email" class="form-control"></p>
+                    <p>Password:<input ng-model="pwdReg" type="password" class="form-control"></p>
+                    <p>Confirm password:<input ng-model="pwdMatches" type="password"
+                                               class="form-control">
+                    <p>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="registration()">
+                    Registration
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
